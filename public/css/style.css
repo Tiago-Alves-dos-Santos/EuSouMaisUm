@@ -1,0 +1,54 @@
+.primary-color {
+    background-color: #3999c6;
+}
+
+
+/* depoimentos */
+
+.title-container {
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container .jumbotron {
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+
+/* ------------------------- */
+
+
+/* doacoes */
+
+.card-body {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+
+/* ------------------------- */
+
+.col-md-6 img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.row .col-md-6 img {
+    border-radius: 15px;
+}
+
+.row .col-md-6 p {
+    margin-top: 8px;
+    font-family: Roboto, sans-serif;
+}
