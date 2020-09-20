@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('index-pages/tela-inicio');
-});
+    return view('index-pages.index');
+})->name('homepage');
 Route::get('/depoimentos', function () {
     return view('depoimento');
-});
+})->name('view.depoimento');
 Route::get('/doacoes', function() {
     return view('doacoes');
 });

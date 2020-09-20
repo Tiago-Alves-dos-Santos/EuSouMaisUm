@@ -1,65 +1,88 @@
-<header>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+<div class="fundo-sidemenu"></div>
+<div class="fundo"></div>
 
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="/">DoeMais</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-scroll">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="{{ asset('img/logo-navbar.png') }}" class="img-fluid" />
+        </a>
+        <button id="side-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-expanded="true" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" id="inicio">
+          <a class="nav-link" href="{{ route('homepage') }}">Inicio <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Campanha</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Criar Campanha</a>
+        </li>
+        <li class="nav-item" id="depoimentos">
+            <a class="nav-link" href="{{ route('view.depoimento') }}">Depoimentos</a>
+        </li>
+        {{--  <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Associar-se
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Login</a>
+            <a class="dropdown-item" href="#">Criar Conta</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Outros</a>
+          </div>
+        </li>  --}}
+      </ul>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item" id="inicio">
-                    <a class="nav-link" href="/">Início </a>
-                </li>
-                <li class="nav-item" id="campanhas">
-                    <a class="nav-link" href="#">Campanhas</a>
-                </li>
-                <li class="nav-item" id="campanha">
-                    <a class="nav-link" href="#">Criar campanha</a>
-                </li>
-
-                <li class="nav-item" id="depoimentos">
-                    <a class="nav-link" href="/depoimentos">Depoimentos</a>
-                </li>
-                <li class="nav-item" id="doacoes">
-                    <a class="nav-link" href="/doacoes">Doações</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" data-toggle="modal" data-target="#modalLogin">
-                        Login
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" >
-                        Cadastre-se
-                    </a>
-                </li>
-            </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+            </li>
+            <span style="position: relative; font-size:20px; color:gray; top:3px"> | </span>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cadastro</a>
+            </li>
+        </ul>
+      {{--  <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>  --}}
+    </div>
+    </div>
+  </nav>
 
 
-
-            <!-- Links -->
+  @component('componentes.modal', ['id' => 'modalLogin', 'titulo' => 'Login'])
+    <form action="" method="Post">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira o email">
+            <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu email com ninguém.</small>
         </div>
-        <!-- Collapsible content -->
+        <div class="form-group">
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Mantenha-me conectado</label>
+        </div>
 
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+    </form>
+    @endcomponent
 
-    </nav>
-    <script>
-        let id = $('body').attr('id');
-        for (const element of document.getElementsByTagName('li')) {
-            if (element.id == id) {
-                element.classList.add('active');
-            }
+<script>
+    let id = $('body').attr('id');
+    for (const element of document.getElementsByTagName('li')) {
+        if (element.id == id) {
+            element.classList.add('active');
         }
-    </script>
-</header>
-
+    }
+</script>
