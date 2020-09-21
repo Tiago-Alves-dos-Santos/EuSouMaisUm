@@ -248,3 +248,7 @@ div.backslideshow div.mascara{
 
 /* Fim Plugins css */
 
+.ml-auto .nav-item .nav-link{
+    cursor: pointer;
+}
+

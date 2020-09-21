@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark-scroll">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="{{ asset('img/logo-navbar.png') }}" class="img-fluid" />
         </a>
         <button id="side-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-expanded="true" aria-label="Alterna navegação">
@@ -39,7 +39,7 @@
 
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+                <a class="nav-link"  data-toggle="modal" data-target="#modalLogin">Login</a>
             </li>
             <span style="position: relative; font-size:20px; color:gray; top:3px"> | </span>
             <li class="nav-item">
