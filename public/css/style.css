@@ -1,23 +1,28 @@
 @charset "utf-8";
-/*font-family: 'Montserrat', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body{
+/*font-family: 'Montserrat', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
     font-family: 'Montserrat', sans-serif;
 }
-div{
+
+div {
     position: relative;
     box-sizing: border-box;
 }
+
 .primary-color {
     background-color: #3999c6;
 }
-.btn-azul{
+
+.btn-azul {
     color: #fff;
     background-color: rgb(19, 93, 157);
     border-color: rgb(19, 93, 157);
 }
-.btn-azul:hover{
+
+.btn-azul:hover {
     color: #fff;
     background-color: rgb(20, 69, 155);
     transition: .5s;
@@ -27,8 +32,6 @@ div{
     -ms-transition: .5s;
     -o-transition: .5s;
 }
-
-
 
 
 /* depoimentos */
@@ -65,9 +68,11 @@ div{
 
 
 /* ------------------------- */
-.row{
+
+.row {
     /* margin: 70px 0; */
 }
+
 .col-md-6 img {
     width: 100%;
     display: block;
@@ -78,7 +83,8 @@ div{
     margin-top: 8px;
     font-family: Roboto, sans-serif;
 }
-div.img-legenda-container img{
+
+div.img-legenda-container img {
     border-radius: 10px 10px 0 0;
     -webkit-border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
@@ -86,32 +92,34 @@ div.img-legenda-container img{
     -o-border-radius: 10px 10px 0 0;
 }
 
-div.caption-imagem div.texto-caption{
+div.caption-imagem div.texto-caption {
     position: absolute;
     width: 100%;
     height: 100%;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgba(142, 142, 142,.7);
-    color:white;
+    background-color: rgba(142, 142, 142, .7);
+    color: white;
     border-radius: 10px 10px 0 0;
     -webkit-border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
     -ms-border-radius: 10px 10px 0 0;
     -o-border-radius: 10px 10px 0 0;
 }
-div.texto-caption a{
-    color:white;
+
+div.texto-caption a {
+    color: white;
 }
-div.legenda-imagem{
+
+div.legenda-imagem {
     padding: 10px 15px 5px 15px;
-    color:white;
-    background-color: rgba(94, 142, 186,1);
+    color: white;
+    background-color: rgba(94, 142, 186, 1);
     border-radius: 0 0 10px 10px;
     -webkit-border-radius: 0 0 10px 10px;
     -moz-border-radius: 0 0 10px 10px;
@@ -119,7 +127,9 @@ div.legenda-imagem{
     -o-border-radius: 0 0 10px 10px;
 }
 
+
 /* rodape */
+
 #myFooter {
     background-color: #3c3d41;
     color: white;
@@ -160,7 +170,7 @@ div.legenda-imagem{
     margin-top: 30px;
 }
 
-#myFooter h2 a{
+#myFooter h2 a {
     font-size: 50px;
     text-align: center;
     color: #fff;
@@ -224,12 +234,16 @@ div.legenda-imagem{
     }
 }
 
+
 /* fim rodape */
+
 
 /* Plugins css */
 
+
 /* slide de fundo */
-div.backslideshow{
+
+div.backslideshow {
     position: relative;
     width: 100%;
     height: 100%;
@@ -237,18 +251,42 @@ div.backslideshow{
     background-attachment: fixed;
     background-size: cover;
 }
-div.backslideshow div.mascara{
+
+div.backslideshow div.mascara {
     position: absolute;
-    width:100%;
-    height:100%; 
-    background-color:rgba(94, 142, 186,.5); 
-    color:white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 142, 186, .5);
+    color: white;
 }
+
+
 /*Fim slide de fundo*/
+
 
 /* Fim Plugins css */
 
-.ml-auto .nav-item .nav-link{
+.ml-auto .nav-item .nav-link {
     cursor: pointer;
 }
 
+.titulo-criarcampanha {
+    font-size: 70px;
+}
+
+.btsubmeter-campanha {
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(20, 69, 155);
+    border: none;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btsubmeter-campanha:hover {
+    opacity: 0.7;
+    background-color: #1997f1;
+    box-shadow: 0 0 10px #1997f1, 0 0 40px #1997f1, 0 0 80px #1997f1;
+    color: black;
+}
