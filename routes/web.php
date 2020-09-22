@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/depoimentos', function () {
     return view('depoimento');
 })->name('view.depoimento');
-Route::get('/doacoes', function() {
+Route::get('/doacoes', function () {
     return view('doacoes');
 });
+Route::get('/criar-campanhas', function () {
+    return view('criar-campanha');
+})->name('view.criar-campanha');
