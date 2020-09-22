@@ -54,6 +54,9 @@
             </div>
         </div>
     </div>
+    @component('componentes.rodape')
+
+    @endcomponent
     @component('componentes.scripts')
 
     @endcomponent
