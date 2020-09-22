@@ -15,7 +15,7 @@
                 <h1>Depoimentos</h1>
             </div>
             <div class="col-md-6 d-flex flex-row flex-wrap align-content-center justify-content-lg-end">
-                <a href="" class="btn btn-azul">Adicionar+</a>
+                <a href="/novo_depoimento" class="btn btn-azul">Adicionar+</a>
             </div>
             <div class="col-md-12">
                 <div style="background-color: rgb(20, 69, 155); width: 100%; height: 3px;"></div>
