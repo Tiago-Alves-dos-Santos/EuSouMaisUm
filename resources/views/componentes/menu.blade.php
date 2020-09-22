@@ -19,7 +19,7 @@
           <a class="nav-link" href="#">Campanha</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('view.criar-campanha')}}">Criar Campanha</a>
+            <a class="nav-link" href="{{ route('view.criar_campanha')}}">Criar Campanha</a>
         </li>
         <li class="nav-item" id="depoimentos">
             <a class="nav-link" href="{{ route('view.depoimento') }}">Depoimentos</a>
