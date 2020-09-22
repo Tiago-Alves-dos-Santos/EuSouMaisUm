@@ -24,6 +24,6 @@ Route::get('/doacoes', function () {
 Route::get('/novo_depoimento',function(){
     return view('novo_depoimento');
 });
-Route::get('/criar-campanhas', function () {
-    return view('criar-campanha');
-})->name('view.criar-campanha');
+Route::get('/criar_campanhas', function () {
+    return view('criar_campanha');
+})->name('view.criar_campanha');
