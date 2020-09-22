@@ -20,6 +20,9 @@ Route::get('/depoimentos', function () {
 Route::get('/doacoes', function () {
     return view('doacoes');
 });
+Route::get('/novo_depoimento',function(){
+    return view('novo_depoimento');
+});
 Route::get('/criar-campanhas', function () {
     return view('criar-campanha');
 })->name('view.criar-campanha');
