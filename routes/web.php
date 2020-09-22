@@ -20,3 +20,6 @@ Route::get('/depoimentos', function () {
 Route::get('/doacoes', function() {
     return view('doacoes');
 });
+Route::get('/novo_depoimento',function(){
+    return view('novo_depoimento');
+});
