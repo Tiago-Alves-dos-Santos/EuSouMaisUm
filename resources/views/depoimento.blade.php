@@ -5,45 +5,55 @@
 @endcomponent
 
 
-<body class="primary-color" id="depoimentos">
+<body class="" id="depoimentos">
 
     @component('componentes.menu')
     @endcomponent
-    <div class="container" style="background-color: aquamarine;border-radius: 15px;">
-        <h1 class="title-container">Depoimentos</h1>
-        <div class="jumbotron">
-            <h2>Depoimento 1</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/1280x720/3da2d1/FFFFFF?text=16:9" alt="imagem" class="img-thumbnail">
-                </div>
-                <div class="col-md-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend augue eget felis accumsan, id egestas augue laoreet. Etiam bibendum lectus enim, eget facilisis sapien laoreet eget. Praesent vel urna congue, tincidunt justo sit amet, fermentum urna. Phasellus vel arcu ut leo aliquet ullamcorper sed ut neque. Quisque efficitur metus id sapien blandit, id varius tellus interdum. Pellentesque ante elit, placerat vel urna non, dictum sollicitudin purus. Nullam sit amet feugiat eros, at porta sapien. Fusce pretium erat ut metus tincidunt, ac cursus lectus feugiat.
-                </div>
+    <div class="container">
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-6">
+                <h1>Depoimentos</h1>
             </div>
-        </div>
-        <div class="jumbotron">
-            <h2>Depoimento 2</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/1280x720/3da2d1/FFFFFF?text=16:9" alt="imagem" class="img-thumbnail">
-                </div>
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend augue eget felis accumsan, id egestas augue laoreet. Etiam bibendum lectus enim, eget facilisis sapien laoreet eget. Praesent vel urna congue, tincidunt justo sit amet, fermentum urna. Phasellus vel arcu ut leo aliquet ullamcorper sed ut neque. Quisque efficitur metus id sapien blandit, id varius tellus interdum. Pellentesque ante elit, placerat vel urna non, dictum sollicitudin purus. Nullam sit amet feugiat eros, at porta sapien. Fusce pretium erat ut metus tincidunt, ac cursus lectus feugiat.</p>
-                </div>
+            <div class="col-md-6 d-flex flex-row flex-wrap align-content-center justify-content-lg-end">
+                <a href="" class="btn btn-azul">Adicionar+</a>
+            </div>
+            <div class="col-md-12">
+                <div style="background-color: rgb(20, 69, 155); width: 100%; height: 3px;"></div>
             </div>
         </div>
     </div>
 
-    <footer class="page-footer font-small blue pt-4">
-        <div class="footer-copyright text-center py-3">
-            Copyright &copy; <a style="color: white;" href="/"> DoeMais</a>
+    <div class="container">
+        <div class="row mt-2 mb-2">
+            @for($i = 0; $i < 2; $i++)
+                <div class="col-md-12">
+                    @component('componentes.card_header')
+                        
+                    @endcomponent
+                </div>
+            @endfor
         </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
-
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="Navegação de página exemplo">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Próximo</a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
     @component('componentes.scripts')
 
     @endcomponent

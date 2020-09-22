@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('index-pages.index');
 })->name('homepage');
+
 Route::get('/depoimentos', function () {
     return view('depoimento');
 })->name('view.depoimento');
