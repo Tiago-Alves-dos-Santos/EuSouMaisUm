@@ -9,7 +9,7 @@
         <button id="side-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-expanded="true" aria-label="Alterna navegação">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item" id="inicio">
@@ -19,7 +19,7 @@
           <a class="nav-link" href="#">Campanha</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Criar Campanha</a>
+            <a class="nav-link" href="{{ route('view.criar-campanha')}}">Criar Campanha</a>
         </li>
         <li class="nav-item" id="depoimentos">
             <a class="nav-link" href="{{ route('view.depoimento') }}">Depoimentos</a>
