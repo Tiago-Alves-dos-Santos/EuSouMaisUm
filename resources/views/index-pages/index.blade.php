@@ -11,7 +11,7 @@
     @endcomponent
 
     <div class="backslideshow">
-        <div class="mascara d-flex justify-content-center flex-row flex-wrap align-content-center" style="">
+        <div class="mascara d-flex justify-content-center flex-row flex-wrap align-content-center" >
 
             <div class="row d-flex justify-content-center" style=" text-align: center">
                 <div class="col-md-8">
