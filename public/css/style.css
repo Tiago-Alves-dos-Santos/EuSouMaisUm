@@ -15,7 +15,9 @@ div {
 .primary-color {
     background-color: #3999c6;
 }
-
+.projetos-homepage{
+    height: 289px;
+}
 .btn-azul {
     color: #fff;
     background-color: rgb(19, 93, 157);

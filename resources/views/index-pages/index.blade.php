@@ -7,7 +7,7 @@
 <body class="" id="inicio">
 
     @component('componentes.menu')
-        
+
     @endcomponent
 
     <div class="backslideshow">
@@ -34,48 +34,42 @@
                 </div>
             </div>
             <div class="row" style="margin-bottom: 30px">
+                @forelse($projeto as $p)
                 <div class="col-md-6 img-legenda-container mt-2 mb-2">
                     <div class="caption-imagem">
-                        <img src="https://source.unsplash.com/random/420x254" class="img-fluid"/>
-                    
+                        <img src="data:image/png;base64,{{ base64_encode($p->blogo_projeto) }}" class="img-fluid projetos-homepage" alt="{{ $p->Nome_Projeto }}" />
+
                         <div class="texto-caption">
-                            <h2>Nome Projeto</h2>
+                            <h2>{{ $p->Nome_Projeto }}</h2>
                             <a href="">Saiba mais</a>
                         </div>
                     </div>
                     <div class="legenda-imagem">
-                        <h4>Legenda</h4>
+                        <h4>Objetivo do Projeto</h4>
                         <p>
-                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor
+                            {{ $p->Objetivo_projeto }}
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 img-legenda-container mt-2 mb-2">
-                    <div class="caption-imagem">
-                        <img src="https://source.unsplash.com/random/420x254" class="img-fluid"/>
-                    
-                        <div class="texto-caption">
-                            <h2>Nome Projeto</h2>
-                            <a href="">Saiba mais</a>
-                        </div>
-                    </div>
-                    <div class="legenda-imagem">
-                        <h4>Legenda</h4>
-                        <p>
-                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor
-                        </p>
+                @empty
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <h1 class="text-danger">Sem projetos no banco!</h1>
                     </div>
                 </div>
+                @endforelse
+
             </div>
-            <div class="row">
+            <div class="row" style="margin-top: 50px">
                 <div class="col-md-12 d-flex justify-content-center">
-                    <a href="" class="btn btn-azul">Ver Todos +</a>
+                    {{--  <a href="" class="btn btn-azul">Ver Todos +</a>  --}}
+                    {{ $projeto->links() }}
                 </div>
             </div>
         </div>
     </div>
     @component('componentes.rodape')
-        
+
     @endcomponent
 
 
@@ -98,7 +92,7 @@
             $(this).find(".texto-caption").fadeOut('slow');
         });
 
-        
+
     </script>
     @endcomponent
 
