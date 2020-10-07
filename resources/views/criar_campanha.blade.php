@@ -35,7 +35,7 @@
                                                 ex ea commodo consequat.</h3>
                                         </div>
                                     </div>
-                                    <button type="button" class="btsubmeter-campanha" data-toggle="modal" data-target="#modalcriar-campanha">Submeter Campanha</button>
+                                    <a type="button" href="http://bloco6.mcolins.com.br/form_tbprojeto/form_tbprojeto.php" class="btsubmeter-campanha">Submeter Campanha</a>
                                 </div>
                             </div>
                         </div>

@@ -43,7 +43,7 @@
             </li>
             <span style="position: relative; font-size:20px; color:gray; top:3px"> | </span>
             <li class="nav-item">
-                <a class="nav-link" href="#">Cadastro</a>
+                <a class="nav-link" href="http://bloco6.mcolins.com.br/form_pessoa/form_pessoa.php">Cadastro</a>
             </li>
         </ul>
       {{--  <form class="form-inline my-2 my-lg-0">
