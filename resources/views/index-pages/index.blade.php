@@ -41,7 +41,7 @@
 
                         <div class="texto-caption">
                             <h2>{{ $p->Nome_Projeto }}</h2>
-                            <a href="">Saiba mais</a>
+                            <a href="{{route('projeto.viewGaleria', ['id' => $p->idTbProjeto])}}">Saiba mais</a>
                         </div>
                     </div>
                     <div class="legenda-imagem">

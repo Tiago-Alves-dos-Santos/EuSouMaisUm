@@ -13,9 +13,21 @@
 
 Route::get('/', "Controller\ProjetoC@homepage")->name('homepage');
 
+Route::prefix("/projeto")->group(function(){
+    //pagina inicial do barra app
+    Route::get('/', function () {
+        return 'Inicio app';
+    });
+    Route::prefix("/galeria")->group(function(){
+        //pagina inicial do barra app
+        Route::get('/{id}', 'Controller\ProjetoC@viewGaleria')->name('projeto.viewGaleria');
+    });
+});
+
 Route::get('/depoimentos', function () {
     return view('depoimento');
 })->name('view.depoimento');
+
 Route::get('/doacoes', function () {
     return view('doacoes');
 });
