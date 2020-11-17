@@ -25,4 +25,9 @@ class ProjetoC extends Controller
         $galeria = $projeto->getGaleria($galeria);
         return view('projeto.galeria', compact('galeria'));
     }
+    public function viewInformacoes(Request $req)
+    {
+        $projeto = Projeto::find($req->id);
+        return view('leiamais', compact('projeto'));
+    }
 }

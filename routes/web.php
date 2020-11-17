@@ -9,7 +9,7 @@ Route::prefix("/projeto")->group(function(){
         return 'Inicio app';
     });
     Route::prefix("/saiba-mais")->group(function(){
-        Route::get('/{id}', 'Controller\ProjetoC@viewInfomações')->name('projeto.view.informacoes');
+        Route::get('/{id}', 'Controller\ProjetoC@viewInformacoes')->name('projeto.view.informacoes');
         //pagina inicial do barra app
         Route::get('/galeria/{id}', 'Controller\ProjetoC@viewGaleria')->name('projeto.viewGaleria');
     });
@@ -28,6 +28,3 @@ Route::get('/novo_depoimento',function(){
 Route::get('/criar_campanhas', function () {
     return view('criar_campanha');
 })->name('view.criar_campanha');
-Route::get('/leiamais', function () {
-    return view('leiamais');
-})->name('view.leiamais');

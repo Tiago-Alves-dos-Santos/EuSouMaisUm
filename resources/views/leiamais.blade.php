@@ -13,30 +13,27 @@
 <div class="container">
     <div class="row mb-5 mt-3">
         <div class="col-md-12 d-flex justify-content-center"> <!-- Titulo -->
-            <h1>Mais sobre o projeto</h1>
+            <h1>{{ $projeto->Nome_Projeto }}</h1>
         </div>
     </div>
 
     <div class="row mb-5">
             <div class="col-md-6 mt-2">
-                <img src="https://source.unsplash.com/random/150x150" class="img-fluid projetos-homepage" alt="erro" width="100%" height="100%" style="border-radius: 15px" />
+                <img src="data:image/png;base64,{{ base64_encode($projeto->blogo_projeto) }}" class="img-fluid projetos-homepage" alt="{{ $projeto->Nome_Projeto }}"  width="100%" height="100%" style="border-radius: 15px"/>
+
             </div>
         <div class="col-md-6"> <!-- Info -->
             <div class="row">
                 <h1>Objetivo</h1> <!-- publico alvo -->
             </div>
             <div class="row mt-3">
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum</h4> <!-- sobre o projeto -->
+                    <h4>{{ $projeto->Objetivo_projeto }}</h4>
             </div>
             <div class="row mt-3">
-                <h5>Público Alvo</h5>
+                <h5>Público Alvo: {{ $projeto->Publico_Alvo }}</h5>
             </div>
             <div class="row mt-3">
-            <a class="btn btn-azul" href="">Galeria</a>
+            <a class="btn btn-azul" href="{{route('projeto.viewGaleria', ['id' => $projeto->idTbProjeto])}}">Galeria</a>
             </div>
         </div>
     </div>
