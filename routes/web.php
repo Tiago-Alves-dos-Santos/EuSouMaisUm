@@ -18,9 +18,10 @@ Route::prefix("/projeto")->group(function(){
     Route::get('/', function () {
         return 'Inicio app';
     });
-    Route::prefix("/galeria")->group(function(){
+    Route::prefix("/saiba-mais")->group(function(){
+        Route::get('/{id}', 'Controller\ProjetoC@viewInfomações')->name('projeto.view.informacoes');
         //pagina inicial do barra app
-        Route::get('/{id}', 'Controller\ProjetoC@viewGaleria')->name('projeto.viewGaleria');
+        Route::get('/galeria/{id}', 'Controller\ProjetoC@viewGaleria')->name('projeto.viewGaleria');
     });
 });
 

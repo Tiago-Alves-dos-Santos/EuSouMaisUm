@@ -45,10 +45,12 @@
                         </div>
                     </div>
                     <div class="legenda-imagem">
-                        <h4>Objetivo do Projeto</h4>
+                        <h5>Objetivo do Projeto</h5>
                         <p>
-                            {{ $p->Objetivo_projeto }}
+                           {{ $p->Objetivo_projeto }}
                         </p>
+
+                        <h5 class="mt-3">Público-alvo: {{ $p->Publico_Alvo }}</h5>
                     </div>
                 </div>
                 @empty

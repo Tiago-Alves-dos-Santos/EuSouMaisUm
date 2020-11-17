@@ -12,6 +12,9 @@ class ProjetoC extends Controller
     public function homepage()
     {
         $projeto = Projeto::orderBy('Data_Final','desc')->paginate(2);
+//        foreach ($projeto as $p){
+//            echo "$p->Objetivo_projeto <br>";
+//        }
         return view('index-pages.index', compact('projeto'));
     }
 
