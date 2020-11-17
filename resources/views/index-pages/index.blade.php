@@ -41,16 +41,19 @@
 
                         <div class="texto-caption">
                             <h2>{{ $p->Nome_Projeto }}</h2>
-                            <a href="{{route('projeto.viewGaleria', ['id' => $p->idTbProjeto])}}">Saiba mais</a>
+                            <a href="{{route('projeto.viewGaleria', ['id' => $p->idTbProjeto])}}">Ver Galeria</a>
                         </div>
                     </div>
                     <div class="legenda-imagem">
-                        <h5>Objetivo do Projeto</h5>
+                        <!-- <h5>Objetivo do Projeto</h5>
                         <p>
                            {{ $p->Objetivo_projeto }}
-                        </p>
+                        </p> -->
 
                         <h5 class="mt-3">Público-alvo: {{ $p->Publico_Alvo }}</h5>
+                        <div class="d-flex justify-content-end">
+                            <a href="{{ route('view.leiamais')}}" class="btn btn-info" style="color: white;">Leia Mais</a>
+                        </div>
                     </div>
                 </div>
                 @empty
