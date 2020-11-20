@@ -16,13 +16,11 @@
           <a class="nav-link" href="{{ route('homepage') }}">Inicio <span class="sr-only">(página atual)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Campanha</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('view.criar_campanha')}}">Criar Campanha</a>
+            <a class="nav-link" href="http://bloco6.mcolins.com.br/form_tbprojeto/form_tbprojeto.php">Criar Campanha</a>
         </li>
         <li class="nav-item" id="depoimentos">
-            <a class="nav-link" href="{{ route('view.depoimento') }}">Depoimentos</a>
+          {{-- {{ route('view.depoimento') }} --}}
+        <a class="nav-link" href="{{route('view.sobre-nos')}}">Sobre</a>
         </li>
         {{--  <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -37,19 +35,6 @@
         </li>  --}}
       </ul>
 
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link"  data-toggle="modal" data-target="#modalLogin">Login</a>
-            </li>
-            <span style="position: relative; font-size:20px; color:gray; top:3px"> | </span>
-            <li class="nav-item">
-                <a class="nav-link" href="http://bloco6.mcolins.com.br/form_pessoa/form_pessoa.php">Cadastro</a>
-            </li>
-        </ul>
-      {{--  <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-      </form>  --}}
     </div>
     </div>
   </nav>

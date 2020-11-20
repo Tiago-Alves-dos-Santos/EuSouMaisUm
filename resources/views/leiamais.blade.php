@@ -33,7 +33,11 @@
                 <h5>Público Alvo: {{ $projeto->Publico_Alvo }}</h5>
             </div>
             <div class="row mt-3">
-            <a class="btn btn-azul" href="{{route('projeto.viewGaleria', ['id' => $projeto->idTbProjeto])}}">Galeria</a>
+                <div class="col-md-12">
+                    <a class="btn btn-azul" href="{{route('projeto.viewGaleria', ['id' => $projeto->idTbProjeto])}}">Galeria</a>
+
+                    <a class="btn btn-success" href="">Coleta</a>
+                </div>
             </div>
         </div>
     </div>

@@ -28,3 +28,7 @@ Route::get('/novo_depoimento',function(){
 Route::get('/criar_campanhas', function () {
     return view('criar_campanha');
 })->name('view.criar_campanha');
+
+Route::get('/sobre-nos', function(){
+    return view('sobre-nos');
+})->name('view.sobre-nos');
