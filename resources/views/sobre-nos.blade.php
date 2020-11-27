@@ -10,15 +10,15 @@
 
 @endcomponent
 
-<div class="container">
-    <div class="row mb-5 mt-3">
+<div class="container mg-pct">
+    <div class="row mb-3 mt-3">
         <div class="col-md-12 d-flex justify-content-center"> <!-- Titulo -->
             <h1>Sobre Nós</h1>
         </div>
     </div>
 
     <div class="row mb-5">
-            <div class="col-md-12 mt-2">
+            <div class="col-md-12">
                 <img src="https://source.unsplash.com/random/1060x450" class="img-fluid" alt=""  width="100%" height="450px" style="border-radius:15px"/>
 
             </div>
@@ -44,17 +44,17 @@
             $linha = fgets($arquivo);
 
             $img = array(
-                "",
-                "",
-                "",
-                "",
-                "",
+                "arthur.jpeg",
+                "bruno.jpeg",
+                "joelves.jpeg",
+                "jordan.jpeg",
+                "adriano.jpeg",
                 "tiago.jpg",
             );
         @endphp
         <div class="col-md-12">
         <h3>
-            <img src="{{asset("img/participantes/".$img[$i++])}}" class="img-fluid" style="width: 50px; height:50px; border-radius:100%" alt="sem foto"/>
+            <img src="{{asset("img/participantes/".$img[$i++])}}" class="img-fluid rounded-circle mr-2" style="width: 50px; height:50px;" alt="sem foto"/>
             {{$linha}}
         </h3>
         </div>
@@ -62,7 +62,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-12 d-flex justify-content-center">
+        <div class="col-md-12 mb-5 d-flex justify-content-center">
 
         </div>
     </div>

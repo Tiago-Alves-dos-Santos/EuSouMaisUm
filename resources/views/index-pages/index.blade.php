@@ -9,16 +9,22 @@
     @component('componentes.menu')
 
     @endcomponent
-
+    
+    
     <div class="backslideshow">
         <div class="mascara d-flex justify-content-center flex-row flex-wrap align-content-center" >
-
-            <div class="row d-flex justify-content-center" style=" text-align: center">
-                <div class="col-md-8">
-                     <h6>Um projeto para a ajudar quem ajuda</h6> 
-                <h1>
-                    SEJA MAIS UM INFLUENCIADOR DA SOLIDARIEDADE
-                </h1> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h6>Um projeto para a ajudar quem ajuda</h6>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-4  text-center">
+                    <h1>SEJA MAIS UM INFLUENCIADOR DA SOLIDARIEDADE</h1>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
                 <a href="" class="btn btn-azul" style="padding: 20px 30px;">Participe</a>
                 </div>
             </div>
@@ -95,8 +101,6 @@
         },function(){
             $(this).find(".texto-caption").fadeOut('slow');
         });
-
-
     </script>
     @endcomponent
 

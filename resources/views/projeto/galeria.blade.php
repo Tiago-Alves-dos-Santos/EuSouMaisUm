@@ -10,7 +10,7 @@
 
 @endcomponent
 
-<div class="container">
+<div class="container mg-pct">
     <div class="row mb-5 mt-3">
         <div class="col-md-12 d-flex justify-content-center">
             <h1>Galeria</h1>

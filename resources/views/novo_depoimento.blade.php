@@ -9,7 +9,7 @@
     @component('componentes.menu')
 
     @endcomponent
-    <div class="col-md-12" style="min-height: 700px; background: no-repeat center/cover url('img/gatinhos.jpg'); display: flex;">
+    <div class="col-md-12 mg-pct" style="min-height: 700px; background: no-repeat center/cover url('img/gatinhos.jpg'); display: flex;">
         <div class="container col-md-8" style="padding: 25px;background-color: rgba(0, 0, 0, 0.75);">
             <h2 style="color: white;">Novo depoimento</h2>
             <h5 style="word-wrap: break-word ; color: white; text-align: justify;">Conte-nos sua experiência com o projeto "Eu sou mais um". Fique à vontade para enviar imagens relacionadas à uma campanha. </h5>

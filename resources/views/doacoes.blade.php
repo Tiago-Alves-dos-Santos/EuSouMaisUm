@@ -8,7 +8,7 @@
 <body class="primary-color" id="doacoes">
     @component('componentes.menu')
     @endcomponent
-    <div class="container" style="background-color: aquamarine;border-radius: 15px;">
+    <div class="container mg-pct" style="background-color: aquamarine;border-radius: 15px;">
         <h1 class="title-container">Doações</h1>
         <div class="row">
             <div class="col-md-3">
