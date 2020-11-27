@@ -15,11 +15,10 @@
 
             <div class="row d-flex justify-content-center" style=" text-align: center">
                 <div class="col-md-8">
-                    <h6>Um projeto para a ajudar quem ajuda</h6>
+                     <h6>Um projeto para a ajudar quem ajuda</h6> 
                 <h1>
                     SEJA MAIS UM INFLUENCIADOR DA SOLIDARIEDADE
-                </h1>
-
+                </h1> 
                 <a href="" class="btn btn-azul" style="padding: 20px 30px;">Participe</a>
                 </div>
             </div>
