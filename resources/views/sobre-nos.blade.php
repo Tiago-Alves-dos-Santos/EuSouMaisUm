@@ -32,6 +32,32 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Integrantes</h1>
+        </div>
+        @while (!feof($arquivo))
+        @php
+            $i = 0;
+            $linha = fgets($arquivo);
+
+            $img = array(
+                "https://source.unsplash.com/random//50x50",
+                "https://source.unsplash.com/random//50x50",
+                "https://source.unsplash.com/random//50x50",
+                "https://source.unsplash.com/random//50x50",
+                "https://source.unsplash.com/random//50x50",
+                "https://source.unsplash.com/random//50x50",
+            );
+        @endphp
+        <div class="col-md-12">
+        <h3>
+            <img src="{{$img[$i++]}}" class="img-fluid" style="width: 50px; height:50px; border-radius:100%"/>
+            {{$linha}}
+        </h3>
+        </div>
+        @endwhile
+    </div>
 
     <div class="row">
         <div class="col-md-12 d-flex justify-content-center">

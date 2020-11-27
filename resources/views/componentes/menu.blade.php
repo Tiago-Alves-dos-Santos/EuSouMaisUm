@@ -18,6 +18,9 @@
         <li class="nav-item">
             <a class="nav-link" href="http://bloco6.mcolins.com.br/form_tbprojeto/form_tbprojeto.php">Criar Campanha</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://bloco6.mcolins.com.br/form_pessoa/form_pessoa.php">Cadastrar Pessoa</a>
+      </li>
         <li class="nav-item" id="depoimentos">
           {{-- {{ route('view.depoimento') }} --}}
         <a class="nav-link" href="{{route('view.sobre-nos')}}">Sobre</a>

@@ -23,23 +23,43 @@
 
             </div>
         <div class="col-md-6"> <!-- Info -->
-            <div class="row">
-                <h1>Objetivo</h1> <!-- publico alvo -->
-            </div>
-            <div class="row mt-3">
-                    <h4>{{ $projeto->Objetivo_projeto }}</h4>
-            </div>
-            <div class="row mt-3">
-                <h5>Público Alvo: {{ $projeto->Publico_Alvo }}</h5>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-12">
-                    <a class="btn btn-azul" href="{{route('projeto.viewGaleria', ['id' => $projeto->idTbProjeto])}}">Galeria</a>
+            <a class="btn btn-azul" href="{{route('projeto.viewGaleria', ['id' => $projeto->idTbProjeto])}}">Galeria</a>
 
-                    <a class="btn btn-success" href="">Coleta</a>
+            <a class="btn btn-success" href="">Coleta</a>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-12">
+                    <h2>Objetivo</h2>
+                </div> <!-- publico alvo -->
+                <div class="col-md-12">
+                    <h4>{{ $projeto->Objetivo_projeto }}</h4>
                 </div>
             </div>
+            <div class="col-md-6">
+                <h2>Público Alvo: </h2>
+                <h4>{{ $projeto->Publico_Alvo }}</h4>
+            </div>
         </div>
+        
+        </div>
+        
+
+
+        <div class="row mt-3 d-flex flex-wrap">
+            <div class="col-md-6">
+                <h2> Local Entrega: </h2>
+                <h4>{{ $projeto->blocal_entrega }}</h4>
+            </div>
+            <div class="col-md-6">
+                <h2> Objetos Doados: </h2>
+                <h4>{{ $projeto->bobjetos_doado }}</h4>
+            </div>
+        </div>
+
+
+        
     </div>
 
     <div class="row">

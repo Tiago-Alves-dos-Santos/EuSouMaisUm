@@ -30,5 +30,7 @@ Route::get('/criar_campanhas', function () {
 })->name('view.criar_campanha');
 
 Route::get('/sobre-nos', function(){
-    return view('sobre-nos');
+
+    $arquivo = fopen("arquivo/nomes.txt", 'a+');
+    return view('sobre-nos', compact('arquivo'));
 })->name('view.sobre-nos');
