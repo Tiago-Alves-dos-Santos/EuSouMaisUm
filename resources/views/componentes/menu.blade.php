@@ -1,7 +1,7 @@
 <div class="fundo-sidemenu"></div>
 <div class="fundo"></div>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark-scroll">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark-scroll">
     <div class="container">
         <a class="navbar-brand" href="/">
             <img src="{{ asset('img/logo-navbar.png') }}" class="img-fluid" />

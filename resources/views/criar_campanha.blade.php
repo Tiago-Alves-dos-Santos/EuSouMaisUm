@@ -9,7 +9,7 @@
 
     @component('componentes.menu')
     @endcomponent
-            <div class="criar-campanha" style="min-height:600px; background-color: white; padding: 50px">
+            <div class="criar-campanha mg-pct" style="min-height:600px; background-color: white; padding: 50px">
                 <div class="container-fluid">
                     <div class="item-fluid">
                         <div class="container">

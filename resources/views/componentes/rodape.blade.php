@@ -5,7 +5,7 @@
             <div class="col-sm-3">
                 <h2 class="logo"><a href=""> <img src="{{ asset('img/logo-navbar.png') }}" class="img-fluid"/> </a></h2>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <h5>Inicio</h5>
                 <ul>
                 <li><a href="{{route('homepage')}}">Início</a></li>
@@ -13,7 +13,7 @@
                 <li><a href="{{route('view.sobre-nos')}}">Sobre</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <h5>Sobre-nós</h5>
                 <ul>
                 <li><a href="{{route('view.sobre-nos')}}">Informações</a></li>
@@ -21,7 +21,7 @@
                     <li><a href="">Blog</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <h5>Suporte</h5>
                 <ul>
                     <li><a href="">FAQ</a></li>
