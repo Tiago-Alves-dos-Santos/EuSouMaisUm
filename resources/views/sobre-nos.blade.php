@@ -54,7 +54,7 @@
         @endphp
         <div class="col-md-12">
         <h3>
-            <img src="{{asset("img/participantes/".$img[$i++])}}" class="img-fluid" style="width: 50px; height:50px; border-radius:100%"/>
+            <img src="{{asset("img/participantes/".$img[$i++])}}" class="img-fluid" style="width: 50px; height:50px; border-radius:100%" alt="sem foto"/>
             {{$linha}}
         </h3>
         </div>
